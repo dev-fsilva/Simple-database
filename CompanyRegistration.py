@@ -1,5 +1,5 @@
 import json
-# import pandas as pd
+import pandas as pd
 
 # Abrir e carregar os dados do arquivo
 try:
@@ -24,21 +24,25 @@ if adc == '1':
         
     # Adicionar as informações ao dicionário
     if code5digts not in object_json:
-        object_json[code5digts] = []
-
-    object_json[code5digts].append(
-        {
-            'Name' : NameCompany,
-            'CNPJ' : CnpjCompany
-        }
-    )
+        object_json.update(
+            {   
+                'Code' : code5digts,
+                "record":
+                {
+                    'Name' : NameCompany,
+                    'CNPJ' : CnpjCompany,
+                }
+            }
+        )
 else:
-    print(object_json)
+    print("")
 
 # Mostrando empresas cadastradas:
-for codes in object_json.keys():
-    print("Name:",object_json[codes][0]["Name"],"\nCNPJ:",object_json[codes][0]["CNPJ"])
+"""for codes in object_json.keys():
+    print("Name:",object_json[codes][0]["Name"],"\nCNPJ:",object_json[codes][0]["CNPJ"])"""
 
+print(pd.json_normalize(object_json))
+#pd.read_json(object_json, orient = 'values')
 #delete = object_json.pop("0334")
 #print(object_json)
 

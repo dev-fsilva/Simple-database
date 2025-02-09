@@ -1,7 +1,26 @@
 {
-    "Code": "2335",
-    "record": {
-        "Name": "ukuf",
-        "CNPJ": 1245
+    "RegistrationCode-24013": {
+        "Name": "FOMRT",
+        "CNPJ": 245876554489965
+    },
+    "RegistrationCode-02031": {
+        "Name": "FRAGMENTO",
+        "CNPJ": 597974414948494
+    },
+    "RegistrationCode-04300": {
+        "Name": "PROFT",
+        "CNPJ": 65494964646449
+    },
+    "RegistrationCode-25143": {
+        "Name": "MANGOLOG",
+        "CNPJ": 96464444464454454
+    },
+    "RegistrationCode-42324": {
+        "Name": "AMBEV",
+        "CNPJ": 54753126648866
+    },
+    "RegistrationCode-24405": {
+        "Name": "YOUGOY",
+        "CNPJ": 144496565697923
     }
 }

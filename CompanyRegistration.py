@@ -48,4 +48,4 @@ with open('./company.data.json', 'w') as arquivo_json:
 
 print("File updated successfully!")
 
-"""CRIAR CATEGORIAS"""
+"""CRIAR CATEGORIAS - TESTA POSSIVEIS ERROS DE USUARIOS"""

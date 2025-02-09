@@ -1,9 +1,10 @@
 >|    Etapa 1    |<
 Criação do cadastro da empresa:
-[] Importa o Pandas
+[x] Importa o Pandas
 [x] Importa o json
 [x] Importa Random
 [x] Cria o caminho para arquivo json
 [x] Gerador de codigo para cada empresa cadastrada
 [x] Adicianando o valores ao dicionario
+[X] Mostra dados Tabulados
 [x] Fecha o arquivo

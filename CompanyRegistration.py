@@ -1,6 +1,18 @@
 import json
 import pandas as pd
 
+def toReceiveCategory(numr):
+    if numr == '1':
+        return "Logistics"
+    elif numr == '2':
+        return "Carrier"
+    elif numr == '3':
+        return "Food"
+    elif numr == '4':
+        return "Cleaning"
+    return "Nulo"
+
+
 # Abrir e carregar os dados do arquivo
 try:
     # Caminho para o arquivo
@@ -12,13 +24,28 @@ except FileNotFoundError:
 
 
 adc = input('To add?\n1-Yes\n2-No\n>')
-if adc == '1':
+if adc == "1":
 
     # Editar os dados
     NameCompany = input("Enter company name: ")
-    CnpjCompany = int(input("Enter the CNPJ: "))
-    Category = "Limpeza"
-    
+    while 1:
+        try:
+            CnpjCompany = int(input("Enter the CNPJ: "))
+            
+        except ValueError:
+            print("Enter numbers 14 only!!!")
+            continue
+
+        if len(str(CnpjCompany)) == 14:
+            break
+
+        else:
+            print("Enter numbers only!!!")
+            continue
+
+    Add = input("Enter the number corresponding to the category:\n1|>Logistics\n2|>Carrier\n3|>Food\n4|>Cleaning\n|>")
+    Category = toReceiveCategory(Add[0])
+
     # Cria o codigo de 5 digitos
     import random
     code5digts = ''

@@ -85,3 +85,4 @@ else:
 print(OpenAndCloseen(x="F", y=object_json))
 
 """TESTA POSSIVEIS ERROS DE USUARIOS - REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS"""
+"""Organizar gits por etapas alteradas"""

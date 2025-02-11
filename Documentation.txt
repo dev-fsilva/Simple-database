@@ -3,7 +3,22 @@ Criação do cadastro da empresa:
 [x] Importa o Pandas
 [x] Importa o json
 [x] Importa Random
-[x] Cria o caminho para arquivo json
+[x] Cria o caminho para arquivo Json
+    [x] Adionar o arquivo no objeto Python em Dicionario
+
+[x] Receber o dados do Usuario e filtrar
+    [X] Nome
+
+    [] Cnpj
+        |>   Validação   <|
+        [x] Digitados somente numeros
+        [] Digitados numeros não sequenciais
+        [x] Digitados 14 digitos
+
+    [x] Categoria
+        |>   Validação   <|
+        [x] Pegar somente o 1º digito
+
 [x] Gerador de codigo para cada empresa cadastrada
 [x] Adicianando o valores ao dicionario
 [X] Mostra dados Tabulados

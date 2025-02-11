@@ -1,51 +1,56 @@
 {
     "RegistrationCode-24013": {
         "NAME": "FOMRT",
-        "CNPJ": 245876554489965
+        "CNPJ": "245876554489965"
     },
     "RegistrationCode-02031": {
         "NAME": "FRAGMENTO",
-        "CNPJ": 597974414948494
+        "CNPJ": "597974414948494"
     },
     "RegistrationCode-04300": {
         "NAME": "PROFT",
-        "CNPJ": 65494964646449
+        "CNPJ": "65494964646449"
     },
     "RegistrationCode-25143": {
         "NAME": "MANGOLOG",
-        "CNPJ": 96464444464454454
+        "CNPJ": "96464444464454454"
     },
     "RegistrationCode-42324": {
         "NAME": "AMBEV",
-        "CNPJ": 54753126648866
+        "CNPJ": "54753126648866"
     },
     "RegistrationCode-24405": {
         "NAME": "YOUGOY",
-        "CNPJ": 144496565697923
+        "CNPJ": "144496565697923"
     },
     "RegistrationCode-52150": {
         "NAME": "FELP",
-        "CNPJ": 342432344442234,
+        "CNPJ": "342432344442234",
         "CATEGORY": "Cleaning"
     },
     "RegistrationCode-24254": {
         "NAME": "FORNELI",
-        "CNPJ": 123456789123,
+        "CNPJ": "123456789123",
         "CATEGORY": "Food"
     },
     "RegistrationCode-42131": {
         "NAME": "DPR",
-        "CNPJ": 12345678912345,
+        "CNPJ": "12345678912345",
         "CATEGORY": "Logistics"
     },
     "RegistrationCode-21143": {
         "NAME": "SENAI",
-        "CNPJ": 12345678912345,
+        "CNPJ": "12345678912345",
         "CATEGORY": "Cleaning"
     },
     "RegistrationCode-05542": {
         "NAME": "SESI",
-        "CNPJ": 12345678912345,
+        "CNPJ": "12345678912345",
         "CATEGORY": "Logistics"
+    },
+    "RegistrationCode-30424": {
+        "NAME": "NODET",
+        "CNPJ": "12345678912345",
+        "CATEGORY": "Carrier"
     }
 }

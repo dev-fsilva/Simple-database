@@ -48,14 +48,12 @@ adc = input('To add?\n1-Yes\n2-No\n>')
 if adc == "1":
 
     # Editar os dados
-    NameCompany = input("Enter company name: ")
-    while 1:
-        try:
-            CnpjCompany = int(input("Enter the CNPJ: "))
-            
-        except ValueError:
-            print("Enter numbers 14 only!!!")
-            continue
+    NameCompany = input("Enter company name: ").strip()
+    while True:
+        CnpjCompany = input("Enter the CNPJ: (14 digits): ").strip()
+        if CnpjCompany.isdigit() and len(CnpjCompany) == 14:
+            break
+        print("Invalid CNPJ! Please enter exactly 14 digits.")   
 
         if len(str(CnpjCompany)) == 14:
             break

@@ -10,6 +10,29 @@ def toReceiveCategory(numr):
     }
     return categories.get(numr, "Not defined")
 
+def OpenAndCloseen(x,y=None):
+    # Abrir e carregar os dados do arquivo
+    if x == 'A':
+        try:
+            # Caminho para o arquivo
+            with open('./company.data.json','r') as arquivo_json:
+                return json.load(arquivo_json)
+            
+        except FileNotFoundError:
+            # Cria um dicionário vazio se o arquivo não existir    
+            return {}
+    elif x == 'F':
+        # Salvar os dados de volta no arquivo
+        if y is not None:
+            with open('./company.data.json', 'w') as arquivo_json:
+                json.dump(y, arquivo_json, indent=4)
+            return "File updated successfully!"
+        return "No data to save."
+    else:
+        return "Invalid option."
+    
+# Abrindo ou criando arquivo JSON
+object_json = OpenAndCloseen(x='A')
 
 # Abrir e carregar os dados do arquivo
 try:

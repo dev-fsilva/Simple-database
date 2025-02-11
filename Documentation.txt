@@ -20,5 +20,15 @@ Criação do cadastro da empresa:
         [x] Pegar somente o 1º digito
 
 [x] Gerador de codigo para cada empresa cadastrada
-[X] Mostra dados Tabulados
+    [x] Gerar codigo de 5 digitos para registo
+
+[x] Armezanar dados no dicionario
+    [x] Nome
+    [x] Cnpj
+    [x] Categoria
+
+[x] Mostra dados Tabulados
+    [x] CODIGO DE REGISTRO | NOME | CNPJ
+
 [x] Fecha o arquivo
+    [x] json para converter o objeto Python (object_json) em um arquivo JSON.

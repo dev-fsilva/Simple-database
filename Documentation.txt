@@ -20,6 +20,5 @@ Criação do cadastro da empresa:
         [x] Pegar somente o 1º digito
 
 [x] Gerador de codigo para cada empresa cadastrada
-[x] Adicianando o valores ao dicionario
 [X] Mostra dados Tabulados
 [x] Fecha o arquivo

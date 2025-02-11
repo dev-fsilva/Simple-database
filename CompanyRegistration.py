@@ -2,15 +2,13 @@ import json
 import pandas as pd
 
 def toReceiveCategory(numr):
-    if numr == '1':
-        return "Logistics"
-    elif numr == '2':
-        return "Carrier"
-    elif numr == '3':
-        return "Food"
-    elif numr == '4':
-        return "Cleaning"
-    return "Nulo"
+    categories = {
+        '1': "Logistics",
+        '2': "Carrier",
+        '3': "Food",
+        '4': "Cleaning"
+    }
+    return categories.get(numr, "Not defined")
 
 
 # Abrir e carregar os dados do arquivo

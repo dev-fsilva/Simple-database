@@ -57,5 +57,10 @@
         "NAME": "PRENTE",
         "CNPJ": "12345678912345",
         "CATEGORY": "Logistics"
+    },
+    "RegistrationCode-02414": {
+        "NAME": "FelipeGold",
+        "CNPJ": "11111111111111",
+        "CATEGORY": "Carrier"
     }
 }

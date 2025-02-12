@@ -44,16 +44,16 @@ if adc == "1":
     NameCompany = input("Enter company name: ").strip()
     while True:
         CnpjCompany = input("Enter the CNPJ: (14 digits): ").strip()
-        if CnpjCompany.isdigit() and len(CnpjCompany) == 14:
+        caracter_repedito = CnpjCompany != CnpjCompany[0]*len(CnpjCompany)
+        if caracter_repedito and CnpjCompany.isdigit() and len(CnpjCompany) == 14:
             break
-        print("Invalid CNPJ! Please enter exactly 14 digits.")   
-
-        if len(str(CnpjCompany)) == 14:
-            break
-
+        
         else:
+            print("Invalid CNPJ! Please enter exactly 14 digits.") 
             print("Enter numbers only!!!")
             continue
+        
+        
 
      # Escolha da categoria
     Add = input("Enter the number corresponding to the category:\n"

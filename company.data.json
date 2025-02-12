@@ -52,5 +52,10 @@
         "NAME": "NODET",
         "CNPJ": "12345678912345",
         "CATEGORY": "Carrier"
+    },
+    "RegistrationCode-33345": {
+        "NAME": "PRENTE",
+        "CNPJ": "12345678912345",
+        "CATEGORY": "Logistics"
     }
 }

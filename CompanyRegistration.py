@@ -37,7 +37,7 @@ object_json = OpenAndCloseen(x='A')
 
 print("File opened successfully" if object_json != {} else "File not found. Creating a new one")
 
-adc = input('To add?\n1-Yes\n2-No\n>')
+adc = input('To add?\n1-Yes\n2-No\3-Data Base\n>')
 if adc == "1":
 
     # Editar os dados
@@ -77,10 +77,18 @@ if adc == "1":
             }
         }
     )
-else:
+
+elif adc == '2':
+    print("See you later, Thank you")
+
+elif adc == '3':
     # Mostra empresas cadastradas:
     json_index = json.dumps(object_json)
     print(pd.read_json(json_index, orient = 'index'))
+
+else:
+    print("Numero invalido\nPrograma encerrado")
+    SystemExit()
 
 print(OpenAndCloseen(x="F", y=object_json))
 

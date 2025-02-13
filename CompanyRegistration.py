@@ -38,7 +38,7 @@ object_json = OpenAndCloseen(x='A')
 print("File opened successfully" if object_json != {} else "File not found. Creating a new one")
 
 # 2. 
-adc = input('To add?\n1-Yes\n2-No\3-Data Base\n>')
+adc = input('To add?\n1-Yes\n2-No\n3-Data Base\n>')
 # 2.1.
 if adc == "1":
     # 2.1.1.

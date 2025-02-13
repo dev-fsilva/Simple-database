@@ -86,7 +86,7 @@ elif adc == '3':
     print(pd.read_json(json_index, orient = 'index'))
 # 2.4. 
 else:
-    print("Numero invalido\nPrograma encerrado")
+    print("Invalid number \ in the closed program")
     SystemExit()
     
 # 3.

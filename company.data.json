@@ -26,41 +26,46 @@
     "RegistrationCode-52150": {
         "NAME": "FELP",
         "CNPJ": "342432344442234",
-        "CATEGORY": "Cleaning"
+        "SERVICE": "Cleaning"
     },
     "RegistrationCode-24254": {
         "NAME": "FORNELI",
         "CNPJ": "123456789123",
-        "CATEGORY": "Food"
+        "SERVICE": "Food"
     },
     "RegistrationCode-42131": {
         "NAME": "DPR",
         "CNPJ": "12345678912345",
-        "CATEGORY": "Logistics"
+        "SERVICE": "Logistics"
     },
     "RegistrationCode-21143": {
         "NAME": "SENAI",
         "CNPJ": "12345678912345",
-        "CATEGORY": "Cleaning"
+        "SERVICE": "Cleaning"
     },
     "RegistrationCode-05542": {
         "NAME": "SESI",
         "CNPJ": "12345678912345",
-        "CATEGORY": "Logistics"
+        "SERVICE": "Logistics"
     },
     "RegistrationCode-30424": {
         "NAME": "NODET",
         "CNPJ": "12345678912345",
-        "CATEGORY": "Carrier"
+        "SERVICE": "Carrier"
     },
     "RegistrationCode-33345": {
         "NAME": "PRENTE",
         "CNPJ": "12345678912345",
-        "CATEGORY": "Logistics"
+        "SERVICE": "Logistics"
     },
     "RegistrationCode-02414": {
         "NAME": "FelipeGold",
         "CNPJ": "11111111111111",
-        "CATEGORY": "Carrier"
+        "SERVICE": "Carrier"
+    },
+    "RegistrationCode-00010": {
+        "NAME": "eewf",
+        "CNPJ": "12345678911111",
+        "SERVICE": "Food"
     }
 }

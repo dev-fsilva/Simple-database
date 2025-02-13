@@ -2,7 +2,7 @@ import json
 import pandas as pd
 import sys
 
-def toReceiveCategory(numr):
+def toReceiveService(numr):
     categories = {
         '1': "Logistics",
         '2': "Carrier",
@@ -55,9 +55,9 @@ if adc == "1":
             continue
         
      # 2.1.3
-    Add = input("Enter the number corresponding to the category:\n"
+    Add = input("Enter the number corresponding to the service:\n"
                 "1 -> Logistics\n2 -> Carrier\n3 -> Food\n4 -> Cleaning\n> ").strip()
-    Category = toReceiveCategory(Add[0])
+    Service = toReceiveService(Add[0])
     
     # 2.1.4.
     import random
@@ -72,7 +72,7 @@ if adc == "1":
             {
                 'NAME' : NameCompany,
                 'CNPJ' : CnpjCompany,
-                'CATEGORY': Category
+                'Service': Service
             }
         }
     )

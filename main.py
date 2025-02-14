@@ -1,1 +1,1 @@
-print("Oi")
+from CompanyRegistration import CompanyRegistration

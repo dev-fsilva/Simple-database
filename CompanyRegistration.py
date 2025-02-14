@@ -34,64 +34,67 @@ def OpenAndCloseen(x,y=None):
         return "Invalid option."
     
 # 1.1
-object_json = OpenAndCloseen(x='A')
-print("File opened successfully" if object_json != {} else "File not found. Creating a new one")
 
-# 2. 
-adc = input('To add?\n1-Yes\n2-No\n3-Data Base\n>')
-# 2.1.
-if adc == "1":
-    # 2.1.1.
-    NameCompany = input("Enter company name: ").strip()
-    # 2.1.2
-    while True:
-        CnpjCompany = input("Enter the CNPJ: (14 digits): ").strip()
-        caracter_repedito = CnpjCompany != CnpjCompany[0]*len(CnpjCompany)
-        if caracter_repedito and CnpjCompany.isdigit() and len(CnpjCompany) == 14:
-            break
-        else:
-            print("Invalid CNPJ! Please enter exactly 14 digits.") 
-            print("Enter numbers only!!!")
-            continue
+def CompanyRegistration():
+    object_json = OpenAndCloseen(x='A')
+    print("File opened successfully" if object_json != {} else "File not found. Creating a new one")
+
+    # 2. 
+    adc = input('To add?\n1-Yes\n2-No\n3-Data Base\n>')
+    # 2.1.
+    if adc == "1":
+        # 2.1.1.
+        NameCompany = input("Enter company name: ").strip()
+        # 2.1.2
+        while True:
+            CnpjCompany = input("Enter the CNPJ: (14 digits): ").strip()
+            caracter_repedito = CnpjCompany != CnpjCompany[0]*len(CnpjCompany)
+            if caracter_repedito and CnpjCompany.isdigit() and len(CnpjCompany) == 14:
+                break
+            else:
+                print("Invalid CNPJ! Please enter exactly 14 digits.") 
+                print("Enter numbers only!!!")
+                continue
+            
+        # 2.1.3
+        Add = input("Enter the number corresponding to the service:\n"
+                    "1 -> Logistics\n2 -> Carrier\n3 -> Food\n4 -> Cleaning\n> ").strip()
+        Service = toReceiveService(Add[0])
         
-     # 2.1.3
-    Add = input("Enter the number corresponding to the service:\n"
-                "1 -> Logistics\n2 -> Carrier\n3 -> Food\n4 -> Cleaning\n> ").strip()
-    Service = toReceiveService(Add[0])
-    
-    # 2.1.4.
-    import random
-    code5digts = ''
-    for i in range(5):
-        code5digts += str(random.randint(0, 5))
-        
-    # 2.1.5.
-    object_json.update(
-        {   
-            f"RegistrationCode-{code5digts}":
-            {
-                'NAME' : NameCompany,
-                'CNPJ' : CnpjCompany,
-                'Service': Service
+        # 2.1.4.
+        import random
+        code5digts = ''
+        for i in range(5):
+            code5digts += str(random.randint(0, 5))
+            
+        # 2.1.5.
+        object_json.update(
+            {   
+                f"RegistrationCode-{code5digts}":
+                {
+                    'NAME' : NameCompany,
+                    'CNPJ' : CnpjCompany,
+                    'Service': Service
+                }
             }
-        }
-    )
-# 2.2.
-elif adc == '2':
-    print("See you later, Thank you")
-# 2.3.
-elif adc == '3':
-    # Mostra empresas cadastradas:
-    json_index = json.dumps(object_json)
-    print(pd.read_json(json_index, orient = 'index'))
-# 2.4. 
-else:
-    print("Invalid number \ in the closed program")
-    SystemExit()
-    
-# 3.
-print(OpenAndCloseen(x="F", y=object_json))
+        )
+    # 2.2.
+    elif adc == '2':
+        print("See you later, Thank you")
+    # 2.3.
+    elif adc == '3':
+        # Mostra empresas cadastradas:
+        json_index = json.dumps(object_json)
+        print(pd.read_json(json_index, orient = 'index'))
+    # 2.4. 
+    else:
+        print("Invalid number \ in the closed program")
+        SystemExit()
+        
+    # 3.
+    print(OpenAndCloseen(x="F", y=object_json))
 
+CompanyRegistration()
 # Comenterios do fluxo do programa em Portugues.
 """ 
 1. Abertura e Carregamento dos Dados

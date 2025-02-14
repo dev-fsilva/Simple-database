@@ -1,4 +1,11 @@
 >|    Etapa 1    |<
+Criação da pagina de login
+[] Cria a entrada do Usuario por codigo de cadastro e senha
+    [] Verificação do codigo Digitados
+    [] Verificação da senha
+[] Armezanar codigo de entrada junto a data e hora
+
+>|    Etapa 2    |<
 Criação do cadastro da empresa:
 [x] Importa o Pandas
 [x] Importa o json

@@ -30,3 +30,7 @@ code_verificado = dicionario_de_exemplo[0]["Codigo_User"]
 if code_verificado == str(code_user):
     print("Codigo de registro encontrado")
 print("Codigo de registro não encontrado")
+quit
+
+
+

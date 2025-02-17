@@ -37,7 +37,7 @@ object_json = OpenAndCloseen(x='A')
 
 print("File opened successfully" if object_json != {} else "File not found. Creating a new one")
 
-adc = input('To add?\n1-Yes\n2-No\3-Data Base\n>')
+adc = input('To add?\n1-Yes\n2-No\n3-Data Base\n>')
 if adc == "1":
 
     # Editar os dados
@@ -47,7 +47,7 @@ if adc == "1":
         caracter_repedito = CnpjCompany != CnpjCompany[0]*len(CnpjCompany)
         if caracter_repedito and CnpjCompany.isdigit() and len(CnpjCompany) == 14:
             break
-        
+
         else:
             print("Invalid CNPJ! Please enter exactly 14 digits.") 
             print("Enter numbers only!!!")
@@ -87,7 +87,7 @@ elif adc == '3':
     print(pd.read_json(json_index, orient = 'index'))
 
 else:
-    print("Numero invalido\nPrograma encerrado")
+    print("Invalid number\nProgram closed")
     SystemExit()
 
 print(OpenAndCloseen(x="F", y=object_json))

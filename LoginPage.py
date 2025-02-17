@@ -19,18 +19,20 @@ while True:
 dicionario_de_exemplo = (
     [
         {
-            "Codigo_User": "4578561", "Senha": "APE1458", "Utimos_resgistro": {
+            "CodigoUser": "4578561", "Senha": "APE1458","NomeUser" : "PALOMA ÁGUIAR","Utimos_resgistro": {
                 "Data": "10/02/2025", "Hora":"09:12"
             }
         }
     ]
 )
 
-code_verificado = dicionario_de_exemplo[0]["Codigo_User"]
+code_verificado = dicionario_de_exemplo[0]["CodigoUser"]
 if code_verificado == str(code_user):
     print("Codigo de registro encontrado")
-print("Codigo de registro não encontrado")
-quit
+    print(f"Seja bem vindo,{dicionario_de_exemplo[0]["NomeUser"]}")
+else:
+    print("Codigo de registro não encontrado")
+
 
 
 

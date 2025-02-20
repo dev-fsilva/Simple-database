@@ -39,45 +39,6 @@ def CompanyRegistration():
     object_json = OpenAndCloseen(x='A')
     print("File opened successfully" if object_json != {} else "File not found. Creating a new one")
 
-<<<<<<< HEAD
-adc = input('To add?\n1-Yes\n2-No\n3-Data Base\n>')
-if adc == "1":
-
-    # Editar os dados
-    NameCompany = input("Enter company name: ").strip()
-    while True:
-        CnpjCompany = input("Enter the CNPJ: (14 digits): ").strip()
-        caracter_repedito = CnpjCompany != CnpjCompany[0]*len(CnpjCompany)
-        if caracter_repedito and CnpjCompany.isdigit() and len(CnpjCompany) == 14:
-            break
-
-        else:
-            print("Invalid CNPJ! Please enter exactly 14 digits.") 
-            print("Enter numbers only!!!")
-            continue
-        
-        
-
-     # Escolha da categoria
-    Add = input("Enter the number corresponding to the category:\n"
-                "1 -> Logistics\n2 -> Carrier\n3 -> Food\n4 -> Cleaning\n> ").strip()
-    Category = toReceiveCategory(Add[0])
-    
-    # Cria o codigo de 5 digitos
-    import random
-    code5digts = ''
-    for i in range(5):
-        code5digts += str(random.randint(0, 5))
-        
-    # Adiciona as informações ao dicionário
-    object_json.update(
-        {   
-            f"RegistrationCode-{code5digts}":
-            {
-                'NAME' : NameCompany,
-                'CNPJ' : CnpjCompany,
-                'CATEGORY': Category
-=======
     # 2. 
     adc = input('To add?\n1-Yes\n2-No\n3-Data Base\n>')
     # 2.1.
@@ -113,9 +74,8 @@ if adc == "1":
                 {
                     'NAME' : NameCompany,
                     'CNPJ' : CnpjCompany,
-                    'Service': Service
+                    'SERVICE': Service
                 }
->>>>>>> d51bdebe04981de0f7b76994795186db422b74a1
             }
         )
     # 2.2.
@@ -157,11 +117,6 @@ CompanyRegistration()
     2.1.4. Gera um código único de registro para a empresa.
     2.1.5. Armazena os dados tratados no objeto Python (dicionário).
 
-<<<<<<< HEAD
-else:
-    print("Invalid number\nProgram closed")
-    SystemExit()
-=======
 2.2. Opção: Sair e fechar o programa
         Encerra a execução e grava os dados no arquivo JSON.
 
@@ -180,7 +135,6 @@ else:
 3.3. Se não houver dados (y is None), retorna uma mensagem informando que não há nada para salvar.
 
 """
->>>>>>> d51bdebe04981de0f7b76994795186db422b74a1
 
 
 """TESTA POSSIVEIS ERROS DE USUARIOS - REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS"""

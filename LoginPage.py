@@ -28,8 +28,12 @@ dicionario_de_exemplo = (
 
 code_verificado = dicionario_de_exemplo[0]["CodigoUser"]
 if code_verificado == str(code_user):
+    nome_user = dicionario_de_exemplo[0]["NomeUser"]
+    import CompanyRegistration
     print("Codigo de registro encontrado")
-    print(f"Seja bem vindo,{dicionario_de_exemplo[0]["NomeUser"]}")
+    print(f"Seja bem vindo {nome_user}")
+    print("REDIRENCIONANDO - MAIN")
+    CompanyRegistration.CompanyRegistration()
 else:
     print("Codigo de registro não encontrado")
 

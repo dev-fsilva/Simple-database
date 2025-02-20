@@ -67,5 +67,15 @@
         "NAME": "eewf",
         "CNPJ": "12345678911111",
         "SERVICE": "Food"
+    },
+    "RegistrationCode-11223": {
+        "NAME": "PROEN",
+        "CNPJ": "12345678910101",
+        "Service": "Food"
+    },
+    "RegistrationCode-41253": {
+        "NAME": "FERF",
+        "CNPJ": "12345678910101",
+        "Service": "Cleaning"
     }
 }

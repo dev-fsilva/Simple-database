@@ -19,7 +19,7 @@ while True:
 dicionario_de_exemplo = (
     [
         {
-            "CodigoUser": "4578561", "Senha": "APE1458","NomeUser" : "PALOMA ÁGUIAR","Utimos_resgistro": {
+            "CodigoUser": "4578561", "Senha": "APE1458","NomeUser": "PALOMA ÁGUIAR","Utimos_resgistro": {
                 "Data": "10/02/2025", "Hora":"09:12"
             }
         }

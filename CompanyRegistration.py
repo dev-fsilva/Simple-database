@@ -94,7 +94,6 @@ def CompanyRegistration():
     # 3.
     print(OpenAndCloseen(x="F", y=object_json))
 
-CompanyRegistration()
 # Comenterios do fluxo do programa em Portugues.
 """ 
 1. Abertura e Carregamento dos Dados

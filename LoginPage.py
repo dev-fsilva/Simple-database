@@ -1,13 +1,4 @@
-import json
-
-def OpenArque():
-    try: 
-        with open('./company.data.json','r') as arquivo_json:
-            return json.load(arquivo_json)
-    except FileNotFoundError:
-        return "Erro"
-
-
+tentativas_login = 3
 while True:
     try:
         code_user = int(input("Por favor, digite o seu codigo de registro: "))

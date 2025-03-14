@@ -1,9 +1,9 @@
 >|    Etapa 1    |<
 Criação da pagina de login
 [x] Cria a entrada do Usuario por codigo de cadastro e senha
-    [] Verificação do codigo Digitados
-    [] Verificação da senha
-[] Armezanar codigo de entrada junto a data e hora
+    [x] Verificação do codigo Digitados
+    [x] Verificação da senha
+[x] Armezanar codigo de entrada junto a data e hora
 
 >|    Etapa 2    |<
 Criação do cadastro da empresa:

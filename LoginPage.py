@@ -1,40 +1,40 @@
-tentativas_login = 3
+login_attempts = 3
 while True:
     try:
-        code_user = int(input("Por favor, digite o seu codigo de registro: "))
+        code_user = int(input("Please enter your access code: "))
     except ValueError:
-        print("Digite somente numeros")
+        print("Enter numbers only!")
         continue
-    dicionario_de_exemplo = (
+    example_dictionary = (
         [
             {
-                "CodigoUser": "22", "Senha": "APE1458","NomeUser": "PALOMA ÁGUIAR","Utimos_resgistro": {
-                    "Data": "10/02/2025", "Hora":"09:12"
+                "CodeUser": "22", "Senha": "APE1458","NameUser": "PALOMA ÁGUIAR","Last_Registration": {
+                    "Date": "10/02/2025", "Time":"09:12"
                 }
             }
         ]
     )
-    code_verificado = dicionario_de_exemplo[0]["CodigoUser"]
-    if code_verificado == str(code_user):
-        nome_user = dicionario_de_exemplo[0]["NomeUser"]
-        print("Codigo de registro encontrado")
-        print(f"Seja bem vindo {nome_user}")
+    code_verified = example_dictionary[0]["CodeUser"]
+    if code_verified == str(code_user):
+        noma_user = example_dictionary[0]["NomaUser"]
+        print("Registration code found!!")
+        print(f"Welcome ;-) {noma_user}")
         print("REDIRENCIONANDO - MAIN")
         import CompanyRegistration
         CompanyRegistration.CompanyRegistration()
     else:
-        print("Codigo de registro não encontrado")
-        tentou = int(input(f"Tenta novamente?\nTENTATIVAS({tentativas_login})\n1-Sim\n2-Não\n>>"))
-        if tentou == 1 and tentativas_login > 0 and tentativas_login <= 3:
-            entativas_login -= 1
+        print("Registration code not found")
+        tentou = int(input(f"Try again?\nATTEMPTS({login_attempts})\n1-Yes\n2-No\n>>"))
+        if tentou == 1 and login_attempts > 0 and login_attempts <= 3:
+            login_attempts -= 1
         elif tentou == 2:
-            print("Até mais!!!")
+            print("Until later!!!")
             break
         elif tentou > 2:
-            print("Numero não legivel")
+            print("Number not readable")
             continue
         else:
-            print("Não a mais tentativas disponiveis, tente mais tarde")
+            print("No more attempts available, please try again later")
             break
             
 

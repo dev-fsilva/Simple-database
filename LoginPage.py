@@ -40,7 +40,7 @@ while True:
             
 
 """
-1. Difinindo uma função para receber o codigo digitado e validade se foi digitado somente numeros
+1. Difinindo uma função para  o codigo digitado e validade se foi digitado somente numeros
 2. Pego o codigo cadastrado anteriormente se existe
 3. Codigo validado eu o redireciono a pagina a proxima pagina
 """

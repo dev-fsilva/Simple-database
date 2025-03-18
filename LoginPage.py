@@ -22,6 +22,7 @@ while True:
         print("REDIRENCIONANDO - MAIN")
         import CompanyRegistration
         CompanyRegistration.CompanyRegistration()
+        break
     else:
         print("Registration code not found")
         tentou = int(input(f"Try again?\nATTEMPTS({login_attempts})\n1-Yes\n2-No\n>>"))

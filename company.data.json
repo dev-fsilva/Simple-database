@@ -77,5 +77,10 @@
         "NAME": "FERF",
         "CNPJ": "12345678910101",
         "SERVICE": "Cleaning"
+    },
+    "RegistrationCode-20021": {
+        "NAME": "TESTE-ONE",
+        "CNPJ": "12345678910101",
+        "SERVICE": "Food"
     }
 }

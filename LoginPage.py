@@ -16,7 +16,7 @@ while True:
     )
     code_verified = example_dictionary[0]["CodeUser"]
     if code_verified == str(code_user):
-        noma_user = example_dictionary[0]["NomaUser"]
+        noma_user = example_dictionary[0]["NameUser"]
         print("Registration code found!!")
         print(f"Welcome ;-) {noma_user}")
         print("REDIRENCIONANDO - MAIN")
